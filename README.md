@@ -2,13 +2,13 @@
 
 A simple "TSOA with Prisma ORM" with CRUD API(s)
 
--- Install Packages
+-- Install Packages --> 
 npm i
 
--- To start server
+-- To start server --> 
 npx ts-node-dev src/server.ts
 
--- Swagger docs
+-- Swagger docs -->  
 http://localhost:3000/docs/#/
 
 ![alt text](image.png)
