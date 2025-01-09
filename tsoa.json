@@ -1,0 +1,26 @@
+{
+  "entryFile": "src/server.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "controllerPathGlobs": ["src/controllers/*.ts"],
+  "spec": {
+    "outputDirectory": "src",
+    "specVersion": 3,
+    "specFileBaseName": "swagger",
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": ["http"],
+    "outputFormat": "json",
+    "securityDefinitions": {
+      "jwt": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    },
+    "security": [{ "jwt": [] }]
+  },
+  "routes": {
+    "routesDir": "src",
+    "middleware": "express"
+  }
+}
